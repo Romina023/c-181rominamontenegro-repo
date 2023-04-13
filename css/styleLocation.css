@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: Belleza; color:rgb(9, 0, 80);
+    box-sizing: border-box;
+}
+:root {
+--color-celeste:rgb(205, 240, 234);
+--color-blanco:rgb(249, 249, 249);
+--color-rosado:rgb(246, 198, 234);
+--color-amarillo:rgb(250, 244, 183);
+}
+header{
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado));
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:3vh 5vw;
+    width:100vw;
+}
+.bienvenida{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:6vw;
+    max-width: 50%;
+}
+section #logo{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    max-width:auto;
+    max-height: 6vw;
+}
+header .navegación{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50%;
+     /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
+}
+header .navegación a{
+    text-decoration: none;
+    padding: 1vw;
+    font-size: 1.5rem;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+main{
+    display:flex;
+    justify-content: space-between;
+    height: 60vh;
+    width:100vw;
+    align-items: center center;
+    justify-content: center;
+    background-color: var(--color-blanco);
+    padding: 3vh 5vw;
+}
+main img{
+    display: flex;
+    width:40%;
+    padding: 3vh 5vw;
+    box-shadow: -3px 3px 7px 3px rgb(9,0,80);
+    border-radius: 1rem;
+}
+iframe{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center center;
+    padding: 3vh 5vw;
+    box-shadow: -3px 3px 7px 3px rgb(9,0,80);
+    border-radius: 1rem;
+}
+footer{
+    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+    width: 100vw;
+    height: 20vh;
+    padding: 3vh 5vw;
+    justify-content: end;
+    align-items: last baseline;
+}
+p{
+    text-align: center;
+    justify-content: end;
+    margin-top: 10vh;
+    font-size: 1.5rem;
+}
